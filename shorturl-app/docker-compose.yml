@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  url-shortener:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - url_data:/data
+
+volumes:
+  url_data:
